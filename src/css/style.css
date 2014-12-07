@@ -1,0 +1,205 @@
+/**
+ * Base
+ */
+.modal-content {
+  overflow: hidden;
+}
+textarea {
+  resize: none !important;
+}
+iframe {
+  width: 100%;
+  min-height: 600px;
+  margin-bottom: -6px;
+}
+.text-thin { font-weight: 300; }
+
+
+/**
+ * Block
+ */
+.block {
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 2.25em;
+  border-bottom: 1px dashed #ddd;
+}
+.block .block-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0.5em 1em;
+  font-size: 1.125em;
+  color: #929497;
+  text-transform: lowercase;
+  font-weight: 300;
+  background: rgba(219, 221, 224, 0.61);
+}
+.block .move-controls {
+  background: rgba(219, 221, 224, 0.61);
+  padding: .875em;
+  border-top: 1px solid rgba(219, 221, 224, 0.3);
+  margin-left: 56px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/**
+ * App
+ */
+.insert-block {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.435em 2.125em;
+  opacity: .9;
+}
+.blocks-container {
+  margin-bottom: 2em;
+}
+.vertical-content .page-header {
+  margin: 0;
+  margin-bottom: 1.875em;
+  margin-top: -.5em;
+  border-bottom: none;
+  padding: 2.25em;
+}
+.vertical-content .page-header h3 {
+  margin: 0;
+}
+.action-buttons {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 99;
+  padding: 12px;
+  background: rgba(46, 51, 61, 0.92);
+  box-shadow: 0 0 5px -1px rgba(44, 50, 73, 0.08);
+
+  /* Hide on init.*/
+  display: none;
+}
+footer {
+  padding-bottom: 100px;
+}
+
+
+/**
+ * Vertical tabbed nav.
+ */
+.vertical-tabs {
+  position: relative;
+  min-height: 350px;
+  background: #f7f7f7;
+}
+.vertical-controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 56px;
+  background: #4195FF;
+}
+.vertical-controls a {
+  display: block;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 1.125em;
+  color: #fff;
+}
+.vertical-controls a:hover {
+  background: rgba(50, 126, 223, 0.2);
+}
+.vertical-controls a.active {
+  background: #3586EC;
+}
+.vertical-content {
+  margin-left: 56px;
+  padding: 2.425em;
+  padding-bottom: 5.5em;
+  display: none;
+}
+.vertical-tabs .form-control {
+  border-radius: 0;      
+}
+.vertical-tabs input {
+  height: 44px;
+}
+.vertical-content .help-block {
+  font-style: italic;
+}
+
+
+/**
+ * Custom radio buttons.
+ */
+.pseudo-radio {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.pseudo-radio label {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  line-height: 3em;
+  min-width: 200px;
+  padding-left: 3.875em;
+  
+  border-radius: 3px;
+  color: #666;
+  background: #fdfdfd;
+  
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+}
+.pseudo-radio input {
+  opacity: 0;
+  height: 1px;
+}
+.pseudo-radio label:before {
+  content: '\2714';
+  color: #c8c8c8;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3em;
+  background: #eaeaea;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+}
+
+.pseudo-radio.active label,
+.pseudo-radio label:hover {
+  border-color: #62A3F5;
+  color: rgba(75, 136, 214, 1);
+}
+.pseudo-radio.active label:before,
+.pseudo-radio label:hover:before {
+  color: #417BC4;
+  background-color: #62A3F5;
+}
+
+.style-radios .form-group {
+  display: inline-block;
+  margin-right: 1em;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Email Templatizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create emails from predefined templates.">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="17hats-default" class="container">
+    <header class="page-header">
+      <h1 class="text-center">17hats <small>Email Templatizer</small></h1> <br>
+    </header>
+
+    <br>
+
+    <section class="blocks-container">
+      <p class="text-muted text-center lead notice"><small>Insert a block to start creating your email.</small></p>
+    </section>
+
+    <footer>
+      <div class="text-center action-buttons">
+        <a class="btn btn-default preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Preview</a> 
+        <a class="btn btn-default download"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download</a> 
+        <br>
+      </div>
+
+      <p class="text-center">
+        <a class="btn btn-success insert-block"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+      </p>
+      <br>
+    </footer>
+  </div>
+
+  <div id="17hats-default-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="17hatsDefaultModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="dist/fileSaver.min.js"></script>
+  <script src="dist/handlebars.runtime-v2.0.0.min.js"></script>
+  <script src="dist/compiled-templates-0.0.1.min.js"></script>
+  <script src="dist/email-templatizer-0.0.1.min.js"></script>
+</body>
+</html>

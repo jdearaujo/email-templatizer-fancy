@@ -1,0 +1,8 @@
+/* 
+ * Email Templatizer (v@VERSION)
+ * A Web based email merger.
+ */
+;(function($, win, doc, undefined) {
+
+var PATH_TEMPLATES = 'src/templates/';
+var $win = $(win);

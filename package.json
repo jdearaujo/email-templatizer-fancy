@@ -1,0 +1,21 @@
+{
+  "name": "email-templatizer",
+  "title": "Email Templatizer",
+  "version": "0.0.1",
+  "description": "A Web based email merger.",
+  "author": "Billy Onjea",
+  "homepage": "http://istocode.github.io/",
+  "license":  {
+    "name": "MIT",
+    "url": "https://github.com/istocode/slideview/blob/master/LICENSE"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-watch" : "~0.6.1",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-string-replace": "~0.2.7",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
+}
