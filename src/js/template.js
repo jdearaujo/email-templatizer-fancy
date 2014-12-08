@@ -32,7 +32,6 @@ function Template(opts) {
 Template.prototype = {
   _init: function() {
     this._bindEvents();
-    $('[data-toggle="tooltip"]').tooltip();
 
     // Set iframe height
     this.$resultFrame.css('height', $win.height() - 60);

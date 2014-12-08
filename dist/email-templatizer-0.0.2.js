@@ -1,5 +1,5 @@
 /* 
- * Email Templatizer (v0.0.1)
+ * Email Templatizer (v0.0.2)
  * A Web based email merger.
  */
 ;(function($, win, doc, undefined) {
@@ -156,7 +156,6 @@ function Template(opts) {
 Template.prototype = {
   _init: function() {
     this._bindEvents();
-    $('[data-toggle="tooltip"]').tooltip();
 
     // Set iframe height
     this.$resultFrame.css('height', $win.height() - 60);

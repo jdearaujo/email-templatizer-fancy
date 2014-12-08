@@ -35,10 +35,10 @@ iframe {
   color: #929497;
   text-transform: lowercase;
   font-weight: 300;
-  background: rgba(219, 221, 224, 0.61);
+  background: rgba(219, 221, 224, 0.5);
 }
 .block .move-controls {
-  background: rgba(219, 221, 224, 0.61);
+  background: rgba(219, 221, 224, 0.5);
   padding: .875em;
   border-top: 1px solid rgba(219, 221, 224, 0.3);
   margin-left: 56px;
@@ -97,7 +97,7 @@ footer {
 .vertical-tabs {
   position: relative;
   min-height: 350px;
-  background: #f7f7f7;
+  background: #F8F8F8;
 }
 .vertical-controls {
   position: absolute;
@@ -147,13 +147,13 @@ footer {
 .pseudo-radio label {
   position: relative;
   display: inline-block;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #E9E9E9;
   line-height: 3em;
   min-width: 200px;
   padding-left: 3.875em;
   
   border-radius: 3px;
-  color: #666;
+  color: #9B9B9B;
   background: #fdfdfd;
   
   cursor: pointer;
@@ -173,29 +173,78 @@ footer {
 }
 .pseudo-radio label:before {
   content: '\2714';
-  color: #c8c8c8;
+  color: #F4F4F4;
   position: absolute;
   display: inline-block;
   top: 0;
   bottom: 0;
   left: 0;
   width: 3em;
-  background: #eaeaea;
+  background: #F4F4F4;
   -webkit-transition: .2s;
   -moz-transition: .2s;
   -ms-transition: .2s;
   transition: .2s;
 }
 
+/* Default Color */
 .pseudo-radio.active label,
 .pseudo-radio label:hover {
-  border-color: #62A3F5;
+  border-color: #E6E6E6;
   color: rgba(75, 136, 214, 1);
 }
 .pseudo-radio.active label:before,
 .pseudo-radio label:hover:before {
   color: #417BC4;
   background-color: #62A3F5;
+}
+
+/* White Radio */
+.pseudo-radio.white.active label,
+.pseudo-radio.white label:hover {
+  border-color: #DADADA;
+  color: #666666;
+}
+.pseudo-radio.white.active label:before,
+.pseudo-radio.white label:hover:before {
+  color: #C2C1C1;
+  background-color: #E6E6E6;
+}
+
+/* Light Blue Radio */
+.pseudo-radio.light-blue.active label,
+.pseudo-radio.light-blue label:hover {
+  border-color: #B3CDEE;
+  color: #9EC1EC;
+}
+.pseudo-radio.light-blue.active label:before,
+.pseudo-radio.light-blue label:hover:before {
+  color: #8EB8EE;
+  background-color: #A9CEFD;
+}
+
+/* Dark Blue Radio */
+.pseudo-radio.dark-blue.active label,
+.pseudo-radio.dark-blue label:hover {
+  border-color: #62A3F5;
+  color: rgba(75, 136, 214, 1);
+}
+.pseudo-radio.dark-blue.active label:before,
+.pseudo-radio.dark-blue label:hover:before {
+  color: #417BC4;
+  background-color: #62A3F5;
+}
+
+/* Tan Radio */
+.pseudo-radio.tan.active label,
+.pseudo-radio.tan label:hover {
+  border-color: #E7E3D7;
+  color: #CAC5B5;
+}
+.pseudo-radio.tan.active label:before,
+.pseudo-radio.tan label:hover:before {
+  color: #D6CDB6;
+  background-color: #EEEBE3;
 }
 
 .style-radios .form-group {
